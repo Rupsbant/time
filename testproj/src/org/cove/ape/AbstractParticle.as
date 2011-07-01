@@ -66,6 +66,8 @@ package org.cove.ape {
 		
 		private var _center:Vector2D;
 		private var _multisample:int;
+		
+		private var _timeModifier:Number = 1;
 			
 		
 		/** 
@@ -103,6 +105,29 @@ package org.cove.ape {
 			
 			_center = new Vector2D();
 			_multisample = 0;
+		}
+		
+		/**
+		 * Returns the timeModifier, this is the product of all modifiers of TimeFields the particle is in.
+		 * If the particle is in no TimeField is available, it has a modifier of 1.
+		 */
+		public function get timeModifier() : Number {
+			return _timeModifier;
+		}
+		
+		/**
+		 * Sets the timeModifier, this is the product of all modifiers of TimeFields.
+		 * If the particle exits all fields it should be set to 1;
+		 */
+		public function set timeModifier(timeMod : Number) : void{
+			_timeModifier = timeMod;
+		}
+		
+		/**
+		 * Adds a modifier of a timeField to this particle. 
+		 */
+		public function addModifier(mult:Number) : void {
+			_timeModifier *= mult;
 		}
 	
 		
@@ -387,7 +412,6 @@ package org.cove.ape {
 		 * APEngine.step() cycle. This method integrates the particle.
 		 */
 		public function update(dt2:Number):void {
-			
 			if (fixed) return;
 			
 			// global forces
@@ -399,7 +423,7 @@ package org.cove.ape {
 			
 			var nv:Vector2D = velocity.plus(forces.multEquals(dt2));
 			nv.multEquals(APEngine.damping);
-			curr.plusEquals(nv.mult(1/3));
+			curr.plusEquals(nv.mult(timeModifier));
 			prev.copy(curr.minus(nv));
 
 			// clear the forces
