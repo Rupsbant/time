@@ -1,2 +1,2 @@
-testproj/bin/*
-testproj/obj/*
+/testproj/bin/*
+/testproj/obj/*
