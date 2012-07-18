@@ -1,0 +1,618 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="SpringConstraint,org.cove.ape.SpringConstraint,radian,angle,center,rectScale,currLength,rectHeight,restLength,collidable,fixedEndLimit,fixed,setCollidable,isConnectedTo,init,paint,setDisplay" name="keywords">
+<title>org.cove.ape.SpringConstraint</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'SpringConstraint - APE API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">APE API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?org/cove/ape/SpringConstraint.html&amp;org/cove/ape/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;SpringConstraint</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class SpringConstraint"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">org.cove.ape</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class SpringConstraint</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">SpringConstraint <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="AbstractConstraint.html">AbstractConstraint</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+</table>
+<p></p>
+  A Spring-like constraint that connects two particles
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractItem.html#alwaysRepaint">alwaysRepaint</a> : Boolean<div class="summaryTableDescription">
+   For performance, fixed Particles and SpringConstraints don't have their <code>paint()</code>
+   method called in order to avoid unnecessary redrawing.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#angle">angle</a> : Number<div class="summaryTableDescription">[read-only]
+   The rotational value created by the positions of the two particles attached to this
+   SpringConstraint.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#center">center</a> : <a href="../ape/Vector.html">Vector</a>
+<div class="summaryTableDescription">[read-only]
+   The center position created by the relative positions of the two particles attached to this
+   SpringConstraint.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#collidable">collidable</a> : Boolean<div class="summaryTableDescription">[read-only]
+   Determines if the area between the two particles is tested for collision.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#currLength">currLength</a> : Number<div class="summaryTableDescription">[read-only]
+   Returns the length of the SpringConstraint, the distance between its two 
+   attached particles.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#fixed">fixed</a> : Boolean<div class="summaryTableDescription">[read-only]
+   Returns true if both connected particle's <code>fixed</code> property is true.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#fixedEndLimit">fixedEndLimit</a> : Number<div class="summaryTableDescription">
+   For cases when the SpringConstraint is <code>collidable</code> and only one of the
+   two end particles are fixed.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#radian">radian</a> : Number<div class="summaryTableDescription">[read-only]
+   The rotational value created by the positions of the two particles attached to this
+   SpringConstraint.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rectHeight">rectHeight</a> : Number<div class="summaryTableDescription">
+   If the <code>collidable</code> property is true, you can set the height of the 
+   collidible rectangle between the two attached particles.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rectScale">rectScale</a> : Number<div class="summaryTableDescription">
+   If the <code>collidable</code> property is true, you can set the scale of the collidible area
+   between the two attached particles.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#restLength">restLength</a> : Number<div class="summaryTableDescription">
+   The <code>restLength</code> property sets the length of SpringConstraint.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractItem.html#sprite">sprite</a> : Sprite<div class="summaryTableDescription">
+   Provides a Sprite to use as a container for drawing or adding children.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractConstraint.html#stiffness">stiffness</a> : Number<div class="summaryTableDescription">
+   The stiffness of the constraint.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractConstraint.html">AbstractConstraint</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractItem.html#visible">visible</a> : Boolean<div class="summaryTableDescription">
+   The visibility of the item.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#SpringConstraint()">SpringConstraint</a>(p1:<a href="AbstractParticle.html">AbstractParticle</a>, p2:<a href="AbstractParticle.html">AbstractParticle</a>, stiffness:Number = 0.5, collidable:Boolean = false, rectHeight:Number = 1, rectScale:Number = 1, scaleToLength:Boolean = false)</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractItem.html#cleanup()">cleanup</a>():void</div>
+<div class="summaryTableDescription">
+   This method is called automatically when an item's parent group is removed
+   from the APEngine.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#init()">init</a>():void</div>
+<div class="summaryTableDescription">
+   Sets up the visual representation of this SpringContraint.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#isConnectedTo()">isConnectedTo</a>(p:<a href="AbstractParticle.html">AbstractParticle</a>):Boolean</div>
+<div class="summaryTableDescription">
+   Returns true if the passed particle is one of the two particles attached to this SpringConstraint.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#paint()">paint</a>():void</div>
+<div class="summaryTableDescription">
+   The default painting method for this constraint.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setCollidable()">setCollidable</a>(b:Boolean, rectHeight:Number, rectScale:Number, scaleToLength:Boolean = false):void</div>
+<div class="summaryTableDescription">
+      </div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setDisplay()">setDisplay</a>(d:DisplayObject, offsetX:Number = 0, offsetY:Number = 0, rotation:Number = 0):void</div>
+<div class="summaryTableDescription">
+   Assigns a DisplayObject to be used when painting this constraint.</div>
+</td><td class="summaryTableOwnerCol">SpringConstraint</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractItem.html#setFill()">setFill</a>(color:uint = 0xffffff, alpha:Number = 1):void</div>
+<div class="summaryTableDescription">
+   Sets the style of the fill for this Item.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractItem.html#setLine()">setLine</a>(thickness:Number = 0, color:uint = 0x000000, alpha:Number = 1):void</div>
+<div class="summaryTableDescription">
+   Sets the style of the line for this Item.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractItem.html#setStyle()">setStyle</a>(lineThickness:Number = 0, lineColor:uint = 0x000000, lineAlpha:Number = 1, fillColor:uint = 0xffffff, fillAlpha:Number = 1):void</div>
+<div class="summaryTableDescription">
+   Sets the line and fill of this Item.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="angle"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">angle</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>angle:Number</code>&nbsp;&nbsp;[read-only]<p>
+   The rotational value created by the positions of the two particles attached to this
+   SpringConstraint. You can use this property to in your own painting methods, along with the 
+   <code>center</code> property. 
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get angle():Number</code>
+<br>
+</div>
+<a name="center"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">center</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>center:<a href="../ape/Vector.html">Vector</a></code>&nbsp;&nbsp;[read-only]<p>
+   The center position created by the relative positions of the two particles attached to this
+   SpringConstraint. You can use this property to in your own painting methods, along with the 
+   rotation property.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get center():<a href="../ape/Vector.html">Vector</a></code>
+<br>
+</div>
+<a name="collidable"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collidable</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>collidable:Boolean</code>&nbsp;&nbsp;[read-only]<p>
+   Determines if the area between the two particles is tested for collision. If this value is on
+   you can set the <code>rectHeight</code> and <code>rectScale</code> properties 
+   to alter the dimensions of the collidable area.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get collidable():Boolean</code>
+<br>
+</div>
+<a name="currLength"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">currLength</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>currLength:Number</code>&nbsp;&nbsp;[read-only]<p>
+   Returns the length of the SpringConstraint, the distance between its two 
+   attached particles.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get currLength():Number</code>
+<br>
+</div>
+<a name="fixed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fixed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>fixed:Boolean</code>&nbsp;&nbsp;[read-only]<p>
+   Returns true if both connected particle's <code>fixed</code> property is true.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get fixed():Boolean</code>
+<br>
+</div>
+<a name="fixedEndLimit"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fixedEndLimit</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>fixedEndLimit:Number</code>&nbsp;&nbsp;[read-write]<p>
+   For cases when the SpringConstraint is <code>collidable</code> and only one of the
+   two end particles are fixed. This value will dispose of collisions near the
+   fixed particle, to correct for situations where the collision could never be
+   resolved. Values must be between 0.0 and 1.0.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get fixedEndLimit():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set fixedEndLimit(value:Number):void</code>
+<br>
+</div>
+<a name="radian"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">radian</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>radian:Number</code>&nbsp;&nbsp;[read-only]<p>
+   The rotational value created by the positions of the two particles attached to this
+   SpringConstraint. You can use this property to in your own painting methods, along with the 
+   <code>center</code> property. 
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get radian():Number</code>
+<br>
+</div>
+<a name="rectHeight"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rectHeight</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>rectHeight:Number</code>&nbsp;&nbsp;[read-write]<p>
+   If the <code>collidable</code> property is true, you can set the height of the 
+   collidible rectangle between the two attached particles. Valid values are greater 
+   than 0. If you set the value to 10, then the collision rect will be 10 pixels high.
+   The height is perpendicular to the line connecting the two particles
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rectHeight():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rectHeight(value:Number):void</code>
+<br>
+</div>
+<a name="rectScale"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rectScale</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>rectScale:Number</code>&nbsp;&nbsp;[read-write]<p>
+   If the <code>collidable</code> property is true, you can set the scale of the collidible area
+   between the two attached particles. Valid values are from 0 to 1. If you set the value to 1, then
+   the collision area will extend all the way to the two attached particles. Setting the value lower
+   will result in an collision area that spans a percentage of that distance. Setting the value
+   higher will cause the collision rectangle to extend past the two end particles.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rectScale():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rectScale(value:Number):void</code>
+<br>
+</div>
+<a name="restLength"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">restLength</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>restLength:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The <code>restLength</code> property sets the length of SpringConstraint. This value will be
+   the distance between the two particles unless their position is altered by external forces. 
+   The SpringConstraint will always try to keep the particles this distance apart. Values must 
+   be > 0.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get restLength():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set restLength(value:Number):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="SpringConstraint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SpringConstraint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function SpringConstraint(p1:<a href="AbstractParticle.html">AbstractParticle</a>, p2:<a href="AbstractParticle.html">AbstractParticle</a>, stiffness:Number = 0.5, collidable:Boolean = false, rectHeight:Number = 1, rectScale:Number = 1, scaleToLength:Boolean = false)</code><p>
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p1</span>:<a href="AbstractParticle.html">AbstractParticle</a></code> &mdash; The first particle this constraint is connected to.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p2</span>:<a href="AbstractParticle.html">AbstractParticle</a></code> &mdash; The second particle this constraint is connected to.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">stiffness</span>:Number</code> (default = <code>0.5</code>)<code></code> &mdash; The strength of the spring. Valid values are between 0 and 1. Lower values
+   result in softer springs. Higher values result in stiffer, stronger springs.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">collidable</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Determines if the constraint will be checked for collision
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rectHeight</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; If the constraint is collidable, the height of the collidable area
+   can be set in pixels. The height is perpendicular to the two attached particles.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rectScale</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; If the constraint is collidable, the scale of the collidable area
+   can be set in value from 0 to 1. The scale is percentage of the distance between 
+   the the two attached particles.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scaleToLength</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; If the constraint is collidable and this value is true, the 
+   collidable area will scale based on changes in the distance of the two particles. 
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="init()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function init():void</code><p>
+   Sets up the visual representation of this SpringContraint. This method is called 
+   automatically when an instance of this SpringContraint's parent Group is added to 
+   the APEngine, when  this SpringContraint's Composite is added to a Group, or this 
+   SpringContraint is added to a Composite or Group.
+   </p></div>
+<a name="isConnectedTo()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isConnectedTo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function isConnectedTo(p:<a href="AbstractParticle.html">AbstractParticle</a>):Boolean</code><p>
+   Returns true if the passed particle is one of the two particles attached to this SpringConstraint.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p</span>:<a href="AbstractParticle.html">AbstractParticle</a></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="paint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">paint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function paint():void</code><p>
+   The default painting method for this constraint. This method is called automatically
+   by the <code>APEngine.paint()</code> method. If you want to define your own custom painting
+   method, then create a subclass of this class and override <code>paint()</code>.
+   </p></div>
+<a name="setCollidable()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setCollidable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setCollidable(b:Boolean, rectHeight:Number, rectScale:Number, scaleToLength:Boolean = false):void</code><p>
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:Boolean</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rectHeight</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rectScale</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scaleToLength</span>:Boolean</code> (default = <code>false</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="setDisplay()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setDisplay</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setDisplay(d:DisplayObject, offsetX:Number = 0, offsetY:Number = 0, rotation:Number = 0):void</code><p>
+   Assigns a DisplayObject to be used when painting this constraint.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">d</span>:DisplayObject</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">offsetX</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">offsetY</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rotation</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">
+<footer> 
+</footer>
+</center>
+</div>
+</body>
+</html>
+<!-- -->

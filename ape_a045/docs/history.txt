@@ -1,0 +1,33 @@
+06-21-07 Version 0.45a
+Two new properties for much greater stability - constraintCycles and constraintCollisionCycles
+Group now takes collideInternal setting as a parameter in the constructor.
+Fixed a bug where certain particles/constraints would be drawn before their parent hierarchy was added to the engine
+Corrected misc documentation errors/omissions
+New Demo - walker robot
+
+
+06-01-07 Version 0.4a
+Changed license to MIT
+Groups added. 
+Composites added.
+Fixed a bug with SpringConstraint restLength <= 0. Thanks to Robert Brisita.
+Added a base class, AbstractItem, the parent of both constraints and particles for better OOD
+Fixed particles are no longer repainted, unless new property 'alwaysRepaint' is true  -- improves performance
+Some performance tweaks, especially with loops.
+The 'container' property for particles and constraints renamed to 'sprite', for clarity.
+The APEngine.container property is now of type DisplayObjectContainer, not Sprite.
+Renamed 'rotation' to 'radian' in RectangleParticle to be consistent with SpringConstraint. Thanks to Robert Brisita
+Removed corner particles and edge particles due to grouping issue. The same effect can be recreated with Composites, or Groups
+
+
+
+05-02-07 - Version 0.3
+Improvements to the SpringConstraint including much better collision response
+Many API additions for easier painting and attaching DisplayObjects
+Fixed a bug with adding forces. AbstractParticle.addForce() was altering the 'force' array in APEngine.
+Changed the default painting methods to be faster and better designed.
+Painting cycle is now managed by APEngine, not the user.
+
+
+10-13-06 - Version 0.2
+Initial release

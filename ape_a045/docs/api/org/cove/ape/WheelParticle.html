@@ -1,0 +1,501 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="WheelParticle,org.cove.ape.WheelParticle,speed,angularVelocity,traction,radian,angle,paint,init,update" name="keywords">
+<title>org.cove.ape.WheelParticle</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'WheelParticle - APE API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">APE API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?org/cove/ape/WheelParticle.html&amp;org/cove/ape/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;WheelParticle</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class WheelParticle"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">org.cove.ape</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class WheelParticle</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">WheelParticle <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="CircleParticle.html">CircleParticle</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="AbstractParticle.html">AbstractParticle</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+</table>
+<p></p>
+  A particle that simulates the behavior of a wheel 
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractItem.html#alwaysRepaint">alwaysRepaint</a> : Boolean<div class="summaryTableDescription">
+   For performance, fixed Particles and SpringConstraints don't have their <code>paint()</code>
+   method called in order to avoid unnecessary redrawing.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#angle">angle</a> : Number<div class="summaryTableDescription">[read-only]
+   The rotation of the wheel in degrees.</div>
+</td><td class="summaryTableOwnerCol">WheelParticle</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#angularVelocity">angularVelocity</a> : Number<div class="summaryTableDescription">
+   The angular velocity of the WheelParticle.</div>
+</td><td class="summaryTableOwnerCol">WheelParticle</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#center">center</a> : <a href="../ape/Vector.html">Vector</a>
+<div class="summaryTableDescription">
+   Returns A Vector of the current location of the particle
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#collidable">collidable</a> : Boolean<div class="summaryTableDescription">
+   Determines if the particle can collide with other particles or constraints.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#elasticity">elasticity</a> : Number<div class="summaryTableDescription">
+   The elasticity of the particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#fixed">fixed</a> : Boolean<div class="summaryTableDescription">
+   The fixed state of the particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#friction">friction</a> : Number<div class="summaryTableDescription">
+   The surface friction of the particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#mass">mass</a> : Number<div class="summaryTableDescription">
+   The mass of the particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#multisample">multisample</a> : int<div class="summaryTableDescription">
+   Determines the number of intermediate position steps checked for collision each
+   cycle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#position">position</a> : <a href="../ape/Vector.html">Vector</a>
+<div class="summaryTableDescription">
+   The position of the particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#px">px</a> : Number<div class="summaryTableDescription">
+   The x position of this particle
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#py">py</a> : Number<div class="summaryTableDescription">
+   The y position of this particle
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#radian">radian</a> : Number<div class="summaryTableDescription">[read-only]
+   The rotation of the wheel in radians.</div>
+</td><td class="summaryTableOwnerCol">WheelParticle</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="CircleParticle.html#radius">radius</a> : Number<div class="summaryTableDescription">
+   The radius of the particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="CircleParticle.html">CircleParticle</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#speed">speed</a> : Number<div class="summaryTableDescription">
+   The speed of the WheelParticle.</div>
+</td><td class="summaryTableOwnerCol">WheelParticle</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractItem.html#sprite">sprite</a> : Sprite<div class="summaryTableDescription">
+   Provides a Sprite to use as a container for drawing or adding children.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#traction">traction</a> : Number<div class="summaryTableDescription">
+   The amount of traction during a collision.</div>
+</td><td class="summaryTableOwnerCol">WheelParticle</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractParticle.html#velocity">velocity</a> : <a href="../ape/Vector.html">Vector</a>
+<div class="summaryTableDescription">
+   The velocity of the particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AbstractItem.html#visible">visible</a> : Boolean<div class="summaryTableDescription">
+   The visibility of the item.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#WheelParticle()">WheelParticle</a>(x:Number, y:Number, radius:Number, fixed:Boolean = false, mass:Number = 1, elasticity:Number = 0.3, friction:Number = 0, traction:Number = 1)</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol">WheelParticle</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractParticle.html#addForce()">addForce</a>(f:<a href="../ape/Vector.html">Vector</a>):void</div>
+<div class="summaryTableDescription">
+   Adds a force to the particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractParticle.html#addMasslessForce()">addMasslessForce</a>(f:<a href="../ape/Vector.html">Vector</a>):void</div>
+<div class="summaryTableDescription">
+   Adds a 'massless' force to the particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractItem.html#cleanup()">cleanup</a>():void</div>
+<div class="summaryTableDescription">
+   This method is called automatically when an item's parent group is removed
+   from the APEngine.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#init()">init</a>():void</div>
+<div class="summaryTableDescription">
+   Sets up the visual representation of this particle.</div>
+</td><td class="summaryTableOwnerCol">WheelParticle</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#paint()">paint</a>():void</div>
+<div class="summaryTableDescription">
+   The default paint method for the particle.</div>
+</td><td class="summaryTableOwnerCol">WheelParticle</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractParticle.html#setDisplay()">setDisplay</a>(d:DisplayObject, offsetX:Number = 0, offsetY:Number = 0, rotation:Number = 0):void</div>
+<div class="summaryTableDescription">
+   Assigns a DisplayObject to be used when painting this particle.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractParticle.html">AbstractParticle</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractItem.html#setFill()">setFill</a>(color:uint = 0xffffff, alpha:Number = 1):void</div>
+<div class="summaryTableDescription">
+   Sets the style of the fill for this Item.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractItem.html#setLine()">setLine</a>(thickness:Number = 0, color:uint = 0x000000, alpha:Number = 1):void</div>
+<div class="summaryTableDescription">
+   Sets the style of the line for this Item.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="AbstractItem.html#setStyle()">setStyle</a>(lineThickness:Number = 0, lineColor:uint = 0x000000, lineAlpha:Number = 1, fillColor:uint = 0xffffff, fillAlpha:Number = 1):void</div>
+<div class="summaryTableDescription">
+   Sets the line and fill of this Item.</div>
+</td><td class="summaryTableOwnerCol"><a href="AbstractItem.html">AbstractItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>(dt:Number):void</div>
+<div class="summaryTableDescription">
+      </div>
+</td><td class="summaryTableOwnerCol">WheelParticle</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="angle"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">angle</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>angle:Number</code>&nbsp;&nbsp;[read-only]<p>
+   The rotation of the wheel in degrees.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get angle():Number</code>
+<br>
+</div>
+<a name="angularVelocity"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">angularVelocity</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>angularVelocity:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The angular velocity of the WheelParticle. You can alter this value to make the 
+   WheelParticle spin.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get angularVelocity():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set angularVelocity(value:Number):void</code>
+<br>
+</div>
+<a name="radian"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">radian</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>radian:Number</code>&nbsp;&nbsp;[read-only]<p>
+   The rotation of the wheel in radians.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get radian():Number</code>
+<br>
+</div>
+<a name="speed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">speed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>speed:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The speed of the WheelParticle. You can alter this value to make the 
+   WheelParticle spin.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get speed():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set speed(value:Number):void</code>
+<br>
+</div>
+<a name="traction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">traction</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>traction:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The amount of traction during a collision. This property controls how much traction is 
+   applied when the WheelParticle is in contact with another particle. If the value is set
+   to 0, there will be no traction and the WheelParticle will behave as if the 
+   surface was totally slippery, like ice. Values should be between 0 and 1. 
+   
+   </p><p>
+   Note that the friction property behaves differently than traction. If the surface 
+   friction is set high during a collision, the WheelParticle will move slowly as if
+   the surface was covered in glue.
+   </p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get traction():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set traction(value:Number):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="WheelParticle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">WheelParticle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function WheelParticle(x:Number, y:Number, radius:Number, fixed:Boolean = false, mass:Number = 1, elasticity:Number = 0.3, friction:Number = 0, traction:Number = 1)</code><p>
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash; The initial x position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash; The initial y position.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">radius</span>:Number</code> &mdash; The radius of this particle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fixed</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Determines if the particle is fixed or not. Fixed particles
+   are not affected by forces or collisions and are good to use as surfaces.
+   Non-fixed particles move freely in response to collision and forces.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mass</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; The mass of the particle
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">elasticity</span>:Number</code> (default = <code>0.3</code>)<code></code> &mdash; The elasticity of the particle. Higher values mean more elasticity.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">friction</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; The surface friction of the particle. 
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">traction</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; The surface traction of the particle.
+   <p>
+   Note that WheelParticles can be fixed but rotate freely.
+   </p>
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="init()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function init():void</code><p>
+   Sets up the visual representation of this particle. This method is automatically called when 
+   an particle is added to the engine.
+   </p></div>
+<a name="paint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">paint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function paint():void</code><p>
+   The default paint method for the particle. Note that you should only use
+   the default painting methods for quick prototyping. For anything beyond that
+   you should always write your own classes that either extend one of the
+   APE particle and constraint classes, or is a composite of them. Then within that 
+   class you can define your own custom painting method.
+   </p></div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function update(dt:Number):void</code><p>
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">dt</span>:Number</code></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">
+<footer> 
+</footer>
+</center>
+</div>
+</body>
+</html>
+<!-- -->
