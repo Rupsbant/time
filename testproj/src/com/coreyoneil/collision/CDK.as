@@ -29,6 +29,7 @@ package com.coreyoneil.collision
 {
 	import flash.display.DisplayObject;
 	import flash.display.BitmapData;
+	import flash.display.IBitmapDrawable;
 	import flash.text.TextField;
 	import flash.errors.EOFError;
 	import flash.geom.Rectangle;
@@ -92,7 +93,7 @@ package com.coreyoneil.collision
 			_returnAngleType = "RADIANS";
 		}
 		
-		public function addItem(obj):void 
+		public function addItem(obj:Object):void 
 		{
 			if(obj is DisplayObject)
 			{
@@ -104,7 +105,7 @@ package com.coreyoneil.collision
 			}
 		}
 		
-		public function removeItem(obj):void 
+		public function removeItem(obj:Object):void 
 		{
 			var loc:int = objectArray.indexOf(obj);
 			if(loc > -1) 
@@ -200,7 +201,7 @@ package com.coreyoneil.collision
 			
 			transMatrix1 = item1.transform.matrix;
 			
-			var currentObj = item1;
+			var currentObj:Object = item1;
 			while(currentObj.parent != null)
 			{
 				transMatrix1.concat(currentObj.parent.transform.matrix);
