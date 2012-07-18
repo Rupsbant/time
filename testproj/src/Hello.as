@@ -1,4 +1,6 @@
 package {
+	import engine.TimeField;
+	import flash.geom.Rectangle;
 	import org.cove.ape.*;
 	
 	import flash.display.Sprite;
@@ -35,12 +37,21 @@ package {
 			// gravity -- particles of varying masses are affected the same
 			//APEngine.addMasslessForce(new Vector2D(0, 3));
 			
-			r1 = new RectangleParticle(50, 50, 50, 50);
+			r1 = new RectangleParticle(150, 100, 100, 100);
 			r1.fixed = true;
+			var tf: TimeField = new TimeField(r1.sprite, 4);
+			
+			var r3:CircleParticle = new CircleParticle(200, 100, 50);
+			r3.fixed = true;
+			var tf2:TimeField = new TimeField(r3.sprite, 0.3);
+			
 			r2 = new CircleParticle(100, 50, 10);
+			r2.addTimeField(tf);
+			r2.addTimeField(tf2);
 			var g:Group = new Group();
 			g.addParticle(r1);
 			g.addParticle(r2);
+			g.addParticle(r3);
 			APEngine.addGroup(g);
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, down);
 			
@@ -62,7 +73,6 @@ package {
 		private function run(evt:Event):void {
 			APEngine.step();
 			APEngine.paint();
-			trace(r2.sprite.hitTestObject(r1.sprite));
 		}
 		
 	}

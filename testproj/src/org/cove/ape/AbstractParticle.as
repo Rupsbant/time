@@ -29,8 +29,10 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 package org.cove.ape {
 	
+	import engine.TimeField;
 	import flash.display.Sprite;
 	import flash.display.DisplayObject;
+	import flash.events.EventDispatcher;
 	import flash.utils.getQualifiedClassName;
 
 	 	
@@ -68,6 +70,8 @@ package org.cove.ape {
 		private var _multisample:int;
 		
 		private var _timeModifier:Number = 1;
+		
+		private var _timefields:Array = new Array();
 			
 		
 		/** 
@@ -427,7 +431,12 @@ package org.cove.ape {
 			prev.copy(curr.minus(nv));
 
 			// clear the forces
-			forces.setTo(0,0);
+			forces.setTo(0, 0);
+			if (prev != curr) {
+				for each(var tf:TimeField in _timefields) {
+					tf.collide(this);
+				}
+			}
 		}
 		
 		
@@ -470,6 +479,10 @@ package org.cove.ape {
 		 */		
 		internal function get invMass():Number {
 			return (fixed) ? 0 : _invMass; 
+		}
+		
+		public function addTimeField(tf:TimeField):void {
+			_timefields.push(tf);
 		}
 	}	
 }
