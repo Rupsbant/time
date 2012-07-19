@@ -16,6 +16,8 @@ package {
 	public class Hello extends Sprite {
 		public static var r1:RectangleParticle;
 		public static var r2:CircleParticle;
+		public static var timeFields:Vector.<TimeField> = new Vector.<TimeField>();
+		public static var particles:Vector.<AbstractParticle> = new Vector.<AbstractParticle>;
 		
 		public function Hello() {
 		
@@ -24,7 +26,7 @@ package {
 			// wherever and however you're handling your program cycle.
 			stage.frameRate = 55;
 
-			addEventListener(Event.ENTER_FRAME, run);
+			//addEventListener(Event.ENTER_FRAME, run);
 			
 			// Initialize the engine. The argument here is the time step value. 
 			// Higher values scale the forces in the sim, making it appear to run
@@ -35,7 +37,7 @@ package {
 			APEngine.container = this;
 			
 			// gravity -- particles of varying masses are affected the same
-			//APEngine.addMasslessForce(new Vector2D(0, 3));
+			APEngine.addMasslessForce(new Vector2D(0, 3));
 			
 			r1 = new RectangleParticle(150, 100, 100, 100);
 			r1.fixed = true;
@@ -54,6 +56,7 @@ package {
 			g.addParticle(r3);
 			APEngine.addGroup(g);
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, down);
+			new UI(stage);
 			
 		}
 		
